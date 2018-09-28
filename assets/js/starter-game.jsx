@@ -20,7 +20,7 @@ const initialState = () =>
       locked: false,
       tiles: getTiles().sort(() => 0.5 - Math.random() * Math.random()),
       first: false,
-      second: false;
+      second: false,
     });
 
 class Starter extends React.Component {
