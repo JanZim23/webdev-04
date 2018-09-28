@@ -13,7 +13,7 @@ const createTile = (letter) => {
             />);
 }
 
-class Tile extends react.Component {
+class Tile extends React.Component {
   constructor(props) {
     props.onclick = () => {Starter.tileClicked(this);};
     super(props)
