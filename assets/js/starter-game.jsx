@@ -13,7 +13,7 @@ const getTiles = letters.reduce((a, letter) => {
   a.push(createTile(letter), createTile(letter));
 });
 
-const createTile = function (letter) {
+const createTile = (letter) => {
   return (<Tile
             letter={letter}
             label={letter}
