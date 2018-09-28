@@ -3,15 +3,7 @@ import ReactDOM from 'react-dom';
 import _ from 'lodash';
 
 
-const createTile = function (letter) {
-  return (<Tile
-            letter={letter}
-            label={letter}
-            selected={false}
-            complete={false}
-            onclick={false}
-            />);
-};
+
 
 class Tile extends React.Component {
   constructor(props) {

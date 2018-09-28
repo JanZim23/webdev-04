@@ -10,9 +10,18 @@ export default function game_init(root) {
 const letters = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
 const getTiles = letters.reduce((a, letter) => {
-  a.push(Tile.createTile(letter), Tile.createTile(letter));
+  a.push(createTile(letter), createTile(letter));
 });
 
+const createTile = function (letter) {
+  return (<Tile
+            letter={letter}
+            label={letter}
+            selected={false}
+            complete={false}
+            onclick={false}
+            />);
+};
 
 const initialState = () =>
   Object.assign({},
