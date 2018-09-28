@@ -43,7 +43,7 @@ class Starter extends React.Component {
     if(this.state.first == false) {
       this.setState({first: tile});
       tile.select();
-    } elseif(this.state.second == false) {
+    } else if(this.state.second == false) {
       this.setState({second: tile});
       checkFirstSecond();
     }
