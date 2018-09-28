@@ -10,7 +10,7 @@ export default function game_init(root) {
 const letters = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
 const getTiles = letters.reduce((a, letter) => {
-  a.push(createTile(letter), createTile(letter));
+  a.push(Tile.createTile(letter), Tile.createTile(letter));
 });
 
 
