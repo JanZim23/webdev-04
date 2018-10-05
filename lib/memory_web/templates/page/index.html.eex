@@ -1,10 +1,5 @@
-Enter Game Name:
+<center>
+Enter Game Name:<br>
 <input type="text" id="name">
-<input type="button" onClick="click()" value="Go" />
-  <script>
-  console.log("Test");
-  function click() {
-    console.log("TE");
-    window.location.href = '/game/' + document.getElementById('name').value;
-  }
-</script>
+<button onclick="window.location.href = '/game/' + document.getElementById('name').value;">Go</button>
+</center>
