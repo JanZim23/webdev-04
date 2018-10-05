@@ -1,6 +1,6 @@
 Enter Game Name:
 <input type="text" id="name">
-<input type="button" onclick="click()" value="Go" />
+<input type="button" onClick="click()" value="Go" />
   <script>
   console.log("Test");
   function click() {
