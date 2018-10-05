@@ -1,6 +1,7 @@
 defmodule MemoryWeb.UserSocket do
   use Phoenix.Socket
 
+  channel "games:*", MemoryWeb.GamesChannel
   ## Channels
   # channel "room:*", MemoryWeb.RoomChannel
 

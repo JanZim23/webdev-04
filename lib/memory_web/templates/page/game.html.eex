@@ -1,0 +1,5 @@
+<script>window.getname = "<%= @game %>";</script>
+<div id="root">
+  React app loading...
+</div>
+<script type="text/javascript" src="<%= Routes.static_url(@conn, "/js/app.js") %>"></script>
